@@ -100,7 +100,7 @@ def vote(request, question_id):
                 user=user,
                 question=question,
              )
-             if selected_choice.votes == 0:
+             if selected_choice.enkripsi_votes == 'No':
 
                  public_key, private_key = paillier.generate_paillier_keypair()
 
@@ -127,7 +127,7 @@ def vote(request, question_id):
                  selected_choice.enkripsi = pickle_list_enkripsi
                  selected_choice.enkripsi_stats = "Yes"
 
-             elif selected_choice.votes > 0:
+             elif selected_choice.enkripsi_stats == 'Yes':
 
                   list_enkripsi = pickle.loads(selected_choice.enkripsi)
                   enkripsi_votes = list_enkripsi.pop(0)
