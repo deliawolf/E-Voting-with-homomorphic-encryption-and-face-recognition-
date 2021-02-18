@@ -258,7 +258,7 @@ def logoutuser(request):
     return redirect('voting:login')
 
 def facedect(loc, request):
-    user_agent = get_user_agent(Request)
+    user_agent = get_user_agent(request)
     if user_agent.is_mobile:
         cam = cv2.VideoCapture(1)
     elif user_agent.is_tablet:
