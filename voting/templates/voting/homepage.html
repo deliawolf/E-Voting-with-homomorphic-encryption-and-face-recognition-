@@ -7,8 +7,35 @@
 
 {% block content %}
 
-<center>HOMEPAGE<br>
-<p>Aplikasi ini dibangun sebagai proyek penelitian terkait enkripsi homomorfic yang digunakan untuk meng enkripsi proses perhitungan suara di KPU kota Bandung serta sebagai percobaan sarana pemungutan suara secara online</p>
+<h1><center>TATA CARA MENGGUNAKAN E-VOTING</center> </h1></p>
+    <ol>
+        <li><p class="ex1">Pastikan sudah memiliki akun e-voting. Akun e-voting didapatkan dari kpu disaat penguluhan penggunaan aplikasi e-voting.</li>
+        <li><p class="ex1">Setelah memastikan memiliki akun, masuk ke halaman login dengan menekan menu masuk disebelah kanan atas website</li>
+         <center><img src ="{% static 'images/gambar1.png'%}" width="60%"/></center>
+        <li><p class="ex1">Setelah berada dihalaman masuk, tekan tombol biru bertuliskan Login</li>
+         <center><img src ="{% static 'images/gambar2.png'%}" width="30%"/></center>
+        <li><p class="ex1">Masukan username/nik dan password akun dihalaman login tersebut.</li>
+         <center><img src ="{% static 'images/gambar3.png'%}" width="30%"/></center>
+        <li><p class="ex1">Sebelum menekan tombol Masuk, pastikan terlebih dahulu beberaha hal dikarenakan saat menekan tombol masuk validasi wajah akan dilakukan.</li>
+            <ul>
+                <li>Kamera menangkap wajah secara keseluruhan</li>
+                <li>Pencahayaan pada wajah jelas</li>
+                <li>Wajah tidak miring atau sejenisnya</li>
+                <li>Aksesoris yang menghalangi wajah dihilangkan.</li>
+            </ul>
+        <li><p class="ex1">Setelah menekan tombol masuk, akan tampil halaman pemungutan suara sebagai berikut.</li>
+         <center><img src ="{% static 'images/gambar4.png'%}" width="50%"/></center>
+        <li><p class="ex1">Untuk memberikan suara tekan tombol halaman beri suara, sedangkan untuk melihat hasil perolehan suara tekan tombol hasil perolehan suara. Perlu diperhatikan bahwasanya selama pemungutan suara masih berlangsung hasil pemungutan suara tidak dapat dilihat.</li>
+        <li><p class="ex1">Dilanjutkan memberikan suara dengan menekan tombol halaman beri suara, akan menampilkan halaman yang berisi kandidat calon yang akan dipilih, disini pemilih mengisi radiobutton calon yang akan dipilih. Radiobutton dapat dilihat berupa lingkaran diatas nama kandidat. Setelah mangisi radiobutton tersebut maka tekan tombol beri suara yang berada dibawah kiri berwarna biru.</li>
+         <center><img src ="{% static 'images/gambar5.png'%}" width="70%"/></center>
+        <li><p class="ex1">Setelah memilih pemilih akan diberikan notifikasi pesan berhasil memberikan suara. Perlu diperhatikan setiap pemilih hanya dapat memilih satu kali saja.</li>
+        <li><p class="ex1">Pemilih dapat melihat hasil pemungutan suara pada halaman hasil perolehan suara setelah pemungutan suara selesai, contoh halaman hasil pemungutan suara jika telah selesai.</li>
+         <center><img src ="{% static 'images/gambar6.png'%}" width="50%"/></center>
+        <li><p class="ex1">Setelah itu pemilih dapat keluar dari aplikasi dengan menekan tombol keluar yang berada di kanan atas.</li>
+         <center><img src ="{% static 'images/gambar7.png'%}" width="60%"/></center>
+        <li><p class="ex1">Dan proses pemberian suara menggunakan e-votingpun selesai.</li>
+        <br><br>
+    </ol>
 {% endblock %}
 
 </html>
