@@ -54,6 +54,7 @@ class Pemilih(models.Model):
     head_shot = models.ImageField(upload_to='profil_images', help_text="Gambar wajah yang digunakan untuk validasi masuk sistem pemungutan suara", verbose_name='Foto Wajah')
     is_pemilih = models.BooleanField(default=False, help_text="Menentukan apakah pengguna merupakan kategori pemilih atau tidak", verbose_name='Pemilih')
     head_shot_status_pass = models.BooleanField(default=False, help_text="Menentukan apakah pengguna dapat masuk tanpa validasi wajah", verbose_name="lewati validasi wajah")
+    tps = models.PositiveIntegerField(default=None, help_text="data TPS Pemilih", verbose_name="TPS")
     def __str__(self):
         return self.user.username
 
